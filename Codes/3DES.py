@@ -225,7 +225,6 @@ def DES(text, key, mode):
         # 解密模式子密钥顺序相反
         order_list = range(15, -1, -1)
 
-    
     subkeys = make_subkeys(key)
     output_bit = [0] * 64
     # 初始置换P
