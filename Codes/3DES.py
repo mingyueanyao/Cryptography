@@ -331,32 +331,3 @@ if __name__ == '__main__':
         k3 = input('please input k3(must be 8 characters): ')
 
     print('{} result:'.format(mode), triple_DES(text, k1, k2, k3, mode, DES2_mode))
-
-
-
-# test
-# print(triple_DES('12345678123456', '12345679', '12345670', '12345678', 'encode', 'decode'))
-# print(triple_DES('0x1 0x38 0x2e 0x8b 0xc8 0xc2 0x11 0x84 0x68 0x7 0x22 0x96 0x7f 0xa4 0x96 0x7d', '12345679', '12345670', '12345678', 'decode', 'encode'))
-
-# mode = input('please select a mode(encode or decode): ')
-# while (not (mode == 'encode' or mode == 'decode')):
-#     mode = input('please select a mode(encode or decode): ')
-
-# text = input('please input a text to {}: '.format(mode))
-# key = input('please input a key(must be 8 characters) to {}: '.format(mode))
-# while len(key) != 8:
-#     key = input('please input a key(must be 8 characters) to {}: '.format(mode))
-
-# print('{} result:'.format(mode), run_DES(text, key, mode))
-
-# print(run_DES('thisisamessage', 'keykeyhh', 'encode'))
-# print(run_DES('0x5f 0xa0 0xe5 0xff 0x76 0x8e 0xfd 0x60 0x2a 0x5c 0xa5 0xde 0x81 0x8d 0x0 0xcd', 'keykeyhh', 'decode'))
-
-# print(DES(text, key, mode))
-# print(DES('12345678', '12345678', 'encode'))
-# print(DES('0xee 0x4d 0x15 0xb4 0xf0 0x5c 0xfa 0x3b', '12345678', 'decode'))
-# text_bit = str2bit(text)
-# print(text_bit[:8])
-# print(bit2str(text_bit))
-# make_subkeys('12345678')
-# hex2bit('0x1f 0xef 0xe0 0x8d 0x9a 0x62 0x99 0x30')
