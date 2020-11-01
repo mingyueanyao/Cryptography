@@ -71,7 +71,7 @@ DES使用了Feistel结构，解密可以使用同一个算法，所不同的是�
 
 前两种的总密钥长度达到了168位，后两种的总密钥长度为112位，有效克服了DES面临的穷举搜索攻击，也增强了抗差分分析和线性分析的能力。
 
-**参考实现**：[python](https://github.com/mingyueanyao/Cryptography/Codes/3DES.py)
+**参考实现**：[python](https://github.com/mingyueanyao/Cryptography/blob/master/Codes/3DES.py)
 
 **参考资料**:
 
