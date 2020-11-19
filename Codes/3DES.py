@@ -270,7 +270,9 @@ def run_DES(text, key, mode):
     final_result = ''
     if mode == 'encode':
         length = len(text)
-        text = text + (length % 8) * " "
+        if (length % 8) != 0:
+            text = text + (8 - length % 8) * " "
+            
         for i in range(int(len(text) / 8)):
             sub_text = text[i * 8 : i * 8 + 8]
             sub_result = DES(sub_text, key, mode)
